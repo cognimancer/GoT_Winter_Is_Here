@@ -9,18 +9,23 @@
     <sprite>sprites\sp_player</sprite>
     <sprite>sprites\sp_arrow</sprite>
     <sprite>sprites\sp_enemy</sprite>
+    <sprite>sprites\sp_hud</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
     <path>paths\pa_arrow</path>
     <path>paths\pa_player</path>
   </paths>
+  <fonts name="fonts">
+    <font>fonts\fnt_hud</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Player</object>
     <object>objects\Arrow</object>
     <object>objects\Boundary</object>
     <object>objects\Level</object>
     <object>objects\Enemy</object>
+    <object>objects\HUD</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\dead_arrow</timeline>
