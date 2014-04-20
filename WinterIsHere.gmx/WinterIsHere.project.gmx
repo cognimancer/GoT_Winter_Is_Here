@@ -17,6 +17,7 @@
     <sprites name="Headings">
       <sprite>sprites\sprite_main_title</sprite>
     </sprites>
+    <sprite>sprites\sp_enemy2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -25,6 +26,7 @@
   </paths>
   <scripts name="scripts">
     <script>scripts\script_mouse_hovor.gml</script>
+    <script>scripts\generate_enemy.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_hud</font>
@@ -41,6 +43,7 @@
     </objects>
     <object>objects\object_cursor</object>
     <object>objects\object_main_title</object>
+    <object>objects\Enemy2</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\dead_arrow</timeline>
