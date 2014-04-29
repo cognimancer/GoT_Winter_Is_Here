@@ -35,6 +35,8 @@
   <scripts name="scripts">
     <script>scripts\script_mouse_hovor.gml</script>
     <script>scripts\generate_enemy.gml</script>
+    <script>scripts\damage_enemy.gml</script>
+    <script>scripts\create_arrow.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSL">shaders\shader0.shader</shader>
