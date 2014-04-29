@@ -51,7 +51,7 @@
   </views>
   <instances>
     <instance objName="object_cursor" x="0" y="0" name="inst_E9D7A3C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_main_title" x="160" y="32" name="inst_286004FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_main_title" x="96" y="64" name="inst_286004FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_play" x="320" y="224" name="inst_8A410510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

@@ -71,9 +71,11 @@
             <kind>1</kind>
             <string>draw_set_color(c_white);
 draw_set_alpha(1);
-draw_set_font(fnt_hud);
+draw_set_font(fnt_got);
 
-draw_text(view_xview[0], view_yview[0] + 16, "Money: " + string(money));
+draw_text(view_xview[0] + 16, view_yview[0] + 16, "Silvers");
+draw_set_font(fnt_hud);
+draw_text(view_xview[0] + 96, view_yview[0] + 16, ": " + string(money));
 //draw_text(10, 10, "This is the HUD.");
 </string>
           </argument>
