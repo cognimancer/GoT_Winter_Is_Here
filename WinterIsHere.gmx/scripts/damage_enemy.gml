@@ -4,6 +4,8 @@ with( other )
     hp -= other.speed;
     if( hp <= 0 )
         {
+        speed = 0;
+        y = 0;
         instance_destroy();
         HUD.money += 10;
         }
