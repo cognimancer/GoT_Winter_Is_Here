@@ -35,7 +35,7 @@
     <script>scripts\create_arrow.gml</script>
   </scripts>
   <shaders name="shaders">
-    <shader type="GLSL">shaders\shader0.shader</shader>
+    <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fnt_hud</font>
