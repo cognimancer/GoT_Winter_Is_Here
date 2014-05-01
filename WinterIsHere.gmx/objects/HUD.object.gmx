@@ -3,7 +3,7 @@
   <spriteName>sp_hud</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999999</depth>
+  <depth>999999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -89,24 +89,24 @@ alarm[0] = 60;
 draw_set_alpha(1);
 //money display
 draw_set_font(fnt_got);
-draw_text(view_xview[0] + 16, view_yview[0] + 16, "Silvers");
+draw_text(16, 16, "Silvers");
 draw_set_font(fnt_hud);
-draw_text(view_xview[0] + 96, view_yview[0] + 16, ": " + string(money));
+draw_text(96, 16, ": " + string(money));
 //level display
 draw_set_font(fnt_got);
-draw_text(view_xview[0] + 16, view_yview[0] + 50, "Level");
+draw_text(16, 50, "Level");
 draw_set_font(fnt_hud);
-draw_text(view_xview[0] + 96, view_yview[0] + 50, ": " + string(global.level));
+draw_text(96, 50, ": " + string(global.level));
 //incoming wave countdown
-draw_text(view_xview[0] + 16, view_yview[0] + 90, "New Wave In: " + string(global.time));
+draw_text(16,  90, "New Wave In: " + string(global.time));
 
 //defense items
 draw_set_font(fnt_got);
-draw_text(view_xview[0] + 25, view_yview[0] + 150, "Defenses");
+draw_text(25, 150, "Defenses");
 //barricade
-draw_sprite(sp_barricade, 0, view_xview[0] + 65, view_yview[0] + 200);
+draw_sprite(sp_barricade, 0, 65, 200);
 draw_set_font(fnt_hud);
-draw_text(view_xview[0] + 16, view_yview[0] + 210, "Barricade - 50");
+draw_text(16, 210, "Barricade - 50");
 </string>
           </argument>
         </arguments>

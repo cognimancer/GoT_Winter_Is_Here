@@ -4,7 +4,7 @@
   <width>640</width>
   <height>480</height>
   <vsnap>32</vsnap>
-  <hsnap>1</hsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -40,8 +40,8 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="500" hview="480" xport="140" yport="0" wport="500" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="500" yview="0" wview="140" hview="480" xport="0" yport="0" wport="140" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="140" yview="0" wview="500" hview="480" xport="140" yport="0" wport="500" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="140" hview="480" xport="0" yport="0" wport="140" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -50,15 +50,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Player" x="251" y="416" name="inst_8729C959" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="HUD" x="0" y="0" name="inst_19A9DFFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_cursor" x="128" y="128" name="inst_DAE20975" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="391" y="416" name="inst_8729C959" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Level" x="-32" y="0" name="inst_104D8A76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="HUD" x="500" y="0" name="inst_19A9DFFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Breakpoint" x="140" y="384" name="inst_DADE82B5" locked="0" code="" scaleX="2.87096762657166" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Breakpoint" x="274" y="384" name="inst_AFEC10F9" locked="0" code="" scaleX="2.83870959281921" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Breakpoint" x="16" y="384" name="inst_82BB7D20" locked="0" code="" scaleX="2.83870959281921" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Breakpoint" x="392" y="384" name="inst_8D6AA230" locked="0" code="" scaleX="2.83870959281921" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="object_cursor" x="89" y="128" name="inst_08C798D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall_Breakpoint" x="1295" y="160" name="inst_3C38C9B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Breakpoint" x="280" y="384" name="inst_DADE82B5" locked="0" code="" scaleX="2.87096762657166" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Breakpoint" x="414" y="384" name="inst_AFEC10F9" locked="0" code="" scaleX="2.83870959281921" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Breakpoint" x="156" y="384" name="inst_82BB7D20" locked="0" code="" scaleX="2.83871006965637" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Wall_Breakpoint" x="532" y="384" name="inst_8D6AA230" locked="0" code="" scaleX="2.83871006965637" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

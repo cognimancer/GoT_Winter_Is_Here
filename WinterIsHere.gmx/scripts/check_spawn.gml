@@ -7,7 +7,7 @@ if(spwn == 0){
     if(global.enemyCount < 20){
         //sprite_index = choose(Enemy, Enemy2);
         sprite_index = Enemy;
-        obj = instance_create(50 + (irandom(3) * 125) + (irandom(40) - 20), 0, sprite_index);
+        obj = instance_create(190 + (irandom(3) * 125) + (irandom(40) - 20), 0, sprite_index);
         global.enemyCount++;
     }
 }
