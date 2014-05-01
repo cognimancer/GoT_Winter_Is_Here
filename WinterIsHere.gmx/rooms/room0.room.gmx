@@ -58,6 +58,7 @@
     <instance objName="Wall_Breakpoint" x="414" y="384" name="inst_AFEC10F9" locked="0" code="" scaleX="2.83870959281921" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Breakpoint" x="156" y="384" name="inst_82BB7D20" locked="0" code="" scaleX="2.83871006965637" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Breakpoint" x="532" y="384" name="inst_8D6AA230" locked="0" code="" scaleX="2.83871006965637" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="PowerBar" x="320" y="352" name="inst_50FADD89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
