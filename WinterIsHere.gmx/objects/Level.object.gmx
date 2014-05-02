@@ -26,9 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>global.level = 1;
-global.time = 5;
+global.time = 10; // time between waves
 global.spawn_rate = 50;
+global.enenmyNumPerLevel = 25;
 global.enemyCount = 0;
+global.startCount = false;
+global.enemiesLeft = global.enenmyNumPerLevel;
 
 global.purchased_bow = false;
 </string>

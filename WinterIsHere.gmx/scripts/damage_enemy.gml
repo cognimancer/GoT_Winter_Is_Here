@@ -7,10 +7,8 @@ with( other )
         speed = 0;
         y = 0;
         
-        // Update Enemy Count
-        global.enemyCount--;
-        
         instance_destroy();
+        
         HUD.money += 10;
         }
     }
