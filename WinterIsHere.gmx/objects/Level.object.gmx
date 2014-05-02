@@ -29,6 +29,8 @@
 global.time = 5;
 global.spawn_rate = 50;
 global.enemyCount = 0;
+
+global.purchased_bow = false;
 </string>
           </argument>
         </arguments>
@@ -106,7 +108,7 @@ global.enemyCount = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (HUD.money &gt;= 50 and mouse_x &gt; 0 and mouse_x &lt; 500) {
+            <string>if (HUD.money &gt;= 50 and mouse_x &gt; 140 and mouse_x &lt; 640) {
     HUD.money -= 50;
     obj = instance_create(mouse_x, mouse_y, Barricade);
 }

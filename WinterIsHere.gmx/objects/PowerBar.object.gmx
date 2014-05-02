@@ -25,19 +25,19 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Player.x - 32</string>
+            <string>Player.x - 10</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>Player.y - 25</string>
+            <string>Player.y + 55</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>Player.x + 32</string>
+            <string>Player.x + 45</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>Player.y - 20</string>
+            <string>Player.y + 60</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -45,7 +45,7 @@
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
