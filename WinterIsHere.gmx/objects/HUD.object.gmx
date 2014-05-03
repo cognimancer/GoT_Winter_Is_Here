@@ -86,7 +86,7 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( mouse_y &gt; 250 &amp;&amp; mouse_y &lt; 300 &amp;&amp; money &gt;= 100)
+            <string>if(!global.purchased_bow &amp;&amp; money &gt;= 100 &amp;&amp; mouse_y &gt; 250 &amp;&amp; mouse_y &lt; 300)
     {
     money -= 100;
     global.purchased_bow = true;
