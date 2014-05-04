@@ -51,7 +51,7 @@
             <kind>1</kind>
             <string>vspeed = 1;
 hp = 20;
-image_speed=2;
+image_speed=.2;
 </string>
           </argument>
         </arguments>

@@ -20,15 +20,13 @@
     </sprites>
     <sprite>sprites\sp_enemy2</sprite>
     <sprite>sprites\sp_wall_breakpoint</sprite>
-    <sprite>sprites\sp_wall_damaged</sprite>
-    <sprite>sprites\sp_wall_broken</sprite>
-    <sprite>sprites\sprite11</sprite>
     <sprites name="End_Screen">
       <sprite>sprites\sp_end</sprite>
       <sprite>sprites\sp_restart</sprite>
     </sprites>
     <sprite>sprites\sp_barricade</sprite>
     <sprite>sprites\sp_hud</sprite>
+    <sprite>sprites\sp_button</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -41,6 +39,7 @@
     <script>scripts\damage_enemy.gml</script>
     <script>scripts\create_arrow.gml</script>
     <script>scripts\check_spawn.gml</script>
+    <script>scripts\purchase.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_hud</font>
@@ -57,13 +56,13 @@
       <object>objects\object_main_title</object>
     </objects>
     <object>objects\Wall_Breakpoint</object>
-    <object>objects\object11</object>
     <objects name="End_Screen">
       <object>objects\obj_end_Title</object>
       <object>objects\obj_restart</object>
     </objects>
     <object>objects\Barricade</object>
     <object>objects\PowerBar</object>
+    <object>objects\Button</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\dead_arrow</timeline>

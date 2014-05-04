@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>money = 0;
 alarm[0] = 60;
+btn = instance_create(32,250,Button);
+(btn).action = "bow";
+(btn).sprite = sp_player;
 </string>
           </argument>
         </arguments>
@@ -64,33 +67,6 @@ alarm[0] = 60;
 }
 
 alarm[0] = 60;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(!global.purchased_bow &amp;&amp; money &gt;= 100 &amp;&amp; mouse_y &gt; 250 &amp;&amp; mouse_y &lt; 300)
-    {
-    money -= 100;
-    global.purchased_bow = true;
-    }
 </string>
           </argument>
         </arguments>
@@ -138,19 +114,19 @@ if(global.startCount){
 draw_set_font(fnt_got);
 draw_text(25, 150, "Defenses");
 //barricade
-draw_sprite(sp_barricade, 0, 65, 200);
+draw_sprite(sp_barricade, 0, 65, 190);
 draw_set_font(fnt_hud);
-draw_text(16, 210, "Barricade - 50");
-//crossbow
-draw_sprite(sp_player, 0, 65, 250);
+draw_text(16, 200, "Barricade - 50");
+draw_text(16, 217, "Click on screen");
+//bow
 if( global.purchased_bow )
     {
-    draw_text(16, 300, "Bow - Purchased");
-    draw_text(16, 317, "SHIFT to switch");
+    draw_text(16, 320, "Bow - Purchased");
+    draw_text(16, 337, "SHIFT to switch");
     } else {
-    draw_text(16, 300, "Bow - 100");
-    draw_text(16, 317, "After purchase,");
-    draw_text(16, 334, "SHIFT to switch.");
+    draw_text(16, 320, "Bow - 100");
+    draw_text(16, 337, "After purchase,");
+    draw_text(16, 354, "SHIFT to switch.");
     }
 </string>
           </argument>
