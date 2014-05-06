@@ -368,6 +368,15 @@
             <string>if( arrowReady &amp;&amp; charging ) {
     if( charged &lt; 20 ) {
         charged += 1;
+        if( charged == 7 ) {
+            image_index=3;
+        }
+        if( charged == 14 ) {
+            image_index=4;
+        }
+        if( charged == 20 ){
+            image_index=5;
+        }
     }
     health = charged * 100/20;
 } else if( arrowReady &amp;&amp; xbow ) {
@@ -1465,7 +1474,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>2</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -1655,7 +1664,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>2</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -2479,7 +2488,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>6</string>
           </argument>
           <argument>
             <kind>0</kind>
