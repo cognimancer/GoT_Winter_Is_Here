@@ -60,7 +60,8 @@ btn = instance_create(32,250,Button);
         global.startCount = false;
         
          // Reset/Increase enemy count
-        global.enemiesLeft = global.enenmyNumPerLevel + (global.level * 5);
+        global.enemiesToSpawn = global.enemyNumPerLevel + (global.level * 5);
+        global.enemiesLeft = global.enemiesToSpawn;
     }else{
         global.time--;
     }

@@ -8,12 +8,13 @@ with( other )
         y = 0;
         
         instance_destroy();
-        
-        HUD.money += 10;
+        global.enemiesLeft--;
         
         if(enemyType == "wildling"){
+            HUD.money += 10;
             global.score += 5;
         }else if(enemyType == "giant"){
+            HUD.money += 30;
             global.score += 15;
         }
         

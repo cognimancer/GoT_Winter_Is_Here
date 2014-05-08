@@ -49,9 +49,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 1;
+            <string>vspeed = .7;
 hp = 20;
-image_speed=.2;
+image_speed=.1;
 enemyType = "wildling";
 </string>
           </argument>
