@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_got);
+            <string>draw_set_font(fnt_got_big);
 draw_set_color(c_black);
-draw_text(room_height / 2,  130, "Your Watch Has Ended ");
+draw_text(60,  130, "Your Watch Has Ended ");
 draw_set_font(fnt_hud);
-draw_text(room_height / 2,  150, "Score: " + string(global.score));
+draw_text(250,  180, "Score: " + string(global.score));
 </string>
           </argument>
         </arguments>
