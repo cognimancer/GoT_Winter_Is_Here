@@ -76,7 +76,13 @@ enemyType = "wildling";
           <argument>
             <kind>1</kind>
             <string>if(self.y &gt;= 480){
-    room_goto_next();
+    //enemy has passed the wall
+    global.westerosHealth -= 1;
+    global.enemiesLeft -= 1;
+    instance_destroy();
+    if (global.westerosHealth == 0){ 
+        room_goto_next();
+    }
 }
 </string>
           </argument>
