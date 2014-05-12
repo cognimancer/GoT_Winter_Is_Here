@@ -37,6 +37,7 @@ global.score = 0;
 global.westerosHealth = 3;
 
 global.purchased_bow = false;
+global.tower_price = 200;
 </string>
           </argument>
         </arguments>
@@ -105,8 +106,9 @@ global.purchased_bow = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (HUD.money &gt;= 250 and mouse_x &gt; 140 and mouse_x &lt; 640) {
-    HUD.money -= 250;
+            <string>if (HUD.money &gt;= global.tower_price and mouse_x &gt; 140 and mouse_x &lt; 640) {
+    HUD.money -= global.tower_price;
+    global.tower_price *= 2;
     obj = instance_create(mouse_x, mouse_y, Tower);
 }
 </string>

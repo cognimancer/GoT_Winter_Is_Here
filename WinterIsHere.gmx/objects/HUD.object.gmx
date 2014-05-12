@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>money = 0;
 alarm[0] = 60;
-btn = instance_create(32,350,Button);
+btn = instance_create(32,370,Button);
 (btn).action = "bow";
 (btn).sprite = sp_player;
 </string>
@@ -111,34 +111,36 @@ draw_set_font(fnt_hud);
 draw_text(96,70, ": " + string(global.westerosHealth));
 
 //enemies remaining in wave
-if(global.level != 0){
-    draw_text(5,  120, "Enemies Left:" + string(global.enemiesLeft));
+if(!global.startCount){
+    draw_text(5,  100, "Enemies Left:" + string(global.enemiesLeft));
 }
 //time to next wave
 if(global.startCount){
-    draw_text(5,  145, "Wave In: " + string(global.time));
+    draw_text(5,  100, "Wave In: " + string(global.time));
 }
 //score
-draw_text(5,  170, "Score: " + string(global.score));
+draw_text(5,  125, "Score: " + string(global.score));
 
 //defense items
 draw_set_font(fnt_got);
-draw_text(25, 250, "Defenses");
+draw_text(25, 160, "Defenses");
 //barricade
-draw_sprite(sp_barricade, 0, 65, 290);
+draw_sprite(sp_barricade, 0, 65, 200);
 draw_set_font(fnt_hud);
-draw_text(16, 300, "Barricade - 50");
-draw_text(16, 317, "Click on screen");
+draw_text(5, 220, "Barricade - 50");
+draw_text(5, 237, "Left Click");
+//tower
+draw_sprite(sp_tower, 0, 65, 290);
+draw_text(5, 327, "Archer Tower - " + string(global.tower_price));
+draw_text(5, 344, "Right Click");
 //bow
-if( global.purchased_bow )
-    {
-    draw_text(16, 420, "Bow - Purchased");
-    draw_text(16, 437, "SHIFT to switch");
-    } else {
-    draw_text(16, 420, "Bow - 100");
-    draw_text(16, 437, "After purchase,");
-    draw_text(16, 454, "SHIFT to switch.");
-    }
+if( global.purchased_bow ) {
+    draw_text(5, 441, "Crossbow - --");
+    draw_text(5, 458, "SHIFT to switch");
+} else {
+    draw_text(5, 441, "Crossbow - 100");
+    draw_text(5, 458, "SHIFT to purchase");
+}
 </string>
           </argument>
         </arguments>
