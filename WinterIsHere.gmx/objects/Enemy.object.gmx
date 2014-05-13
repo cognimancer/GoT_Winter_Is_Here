@@ -80,6 +80,7 @@ enemyType = "wildling";
     global.westerosHealth -= 1;
     global.enemiesLeft -= 1;
     instance_destroy();
+    
     if (global.westerosHealth == 0){ 
         room_goto_next();
     }

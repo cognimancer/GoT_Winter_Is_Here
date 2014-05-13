@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>0</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>global.level = 0;
 global.time = 5; // time between waves
-global.spawn_rate = 60;
+global.spawn_rate = 100;
 global.enemyNumPerLevel = 15;
 global.enemyCount = 0;
 global.startCount = true;
@@ -38,6 +38,10 @@ global.westerosHealth = 3;
 
 global.purchased_bow = false;
 global.tower_price = 200;
+
+paused = false;
+global.gameOver = false;
+global.restart = false;
 </string>
           </argument>
         </arguments>
@@ -60,30 +64,46 @@ global.tower_price = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>check_spawn(global.spawn_rate);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="80">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>show_message("Paused")
+            <string>if(global.restart){
+    global.restart = false;
+    
+    room_persistent = false;
+    
+    // RESET GAME
+    global.level = 0;
+    global.time = 5; // time between waves
+    global.spawn_rate = 100;
+    global.enemyNumPerLevel = 15;
+    global.enemyCount = 0;
+    global.startCount = true;
+    global.enemiesToSpawn = global.enemyNumPerLevel;
+    global.enemiesLeft = global.enemyNumPerLevel;
+    global.score = 0;
+    global.westerosHealth = 3;
+    
+    global.purchased_bow = false;
+    global.tower_price = 200;
+    
+    paused = false;
+    global.gameOver = false;
+    global.restart = false;
+    
+    room_restart();
+}
+
+if(!paused &amp;&amp; !global.gameOver){
+    check_spawn(global.spawn_rate);
+}
+
+if(keyboard_check_pressed(vk_enter)){
+    if(paused == true){
+        paused = false;
+        room_goto(room0);
+    }else if(!paused){
+        paused = true;
+        room_goto(room3);
+    }
+}
 </string>
           </argument>
         </arguments>

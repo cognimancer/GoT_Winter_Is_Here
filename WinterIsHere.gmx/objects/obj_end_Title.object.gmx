@@ -25,11 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_got_big);
-draw_set_color(c_black);
-draw_text(60,  130, "Your Watch Has Ended ");
-draw_set_font(fnt_hud);
-draw_text(250,  180, "Score: " + string(global.score));
+            <string>if(room == room_end){
+    draw_set_font(fnt_got_big);
+    draw_set_color(c_black);
+    draw_text(60,  130, "Your Watch Has Ended ");
+    draw_set_font(fnt_hud);
+    draw_text(250,  180, "Score: " + string(global.score));
+}else if (room == room3){
+    draw_set_font(fnt_got_big);
+    draw_set_color(c_black);
+    draw_text(100,  130, "PAUSED");
+    draw_text(100,  180, "Press enter to resume.");
+}
+
+
+
 </string>
           </argument>
         </arguments>
